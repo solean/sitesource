@@ -12,30 +12,48 @@
       </div>
       <div class="nav">
           <span class="nav-link"><a href="https://github.com/solean">Projects</a></span>
-          <span class="nav-link"><a href="resume.html">Resume</a></span>
-          <span class="nav-link"><a href="blog.html">Blog</a></span>
+          <!-- <span class="nav-link"><a href="resume.html">Resume</a></span>
+          <span class="nav-link"><a href="blog.html">Blog</a></span> -->
+          <span><button class="resume">Resume</button></span>
+          <span><button class="blog">Blog</button></span>
       </div>
       <hr>
       <div class="content">
-          {{> aboutme}}
+      	{{#if aboutme}}
+          {{> aboutTemplate}}
+        {{/if}}
+        {{#if resume}}
+        	{{> resumeTemplate}}
+        {{/if}}
+        {{#if blog}}
+        <ol>
+        	{{#each posts}}
+        		{{> postTemplate}}
+        	{{/each}}
+        </ol>
+        {{/if}}
       </div>
   </div>
 
 </body>
 
-<template name="aboutme">
+<template name="aboutTemplate">
 	<p>
 		Hi, I'm a Computer Science student at the University at Buffalo and an aspiring Software Developer.
 	</p>
 </template>
 
-<template name="post">
+<template name="postTemplate">
 	<li>
 		<h3>{{title}}</h3>
 		<p>{{text}}</p>
 		<br>
 		<p>{{pubDate}}</p>
 	</li>
+</template>
+
+<template name="resumeTemplate">
+	<p>Resume stuff blah blah</p>
 </template>
 
 <template name="hello">
