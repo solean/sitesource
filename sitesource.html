@@ -8,7 +8,7 @@
 <body>
   <div id="page-wrap">
       <div id="header-name">
-          <h1><a href="index.html">Chris Schnabel</a></h1>
+          <h1><a href="/">Chris Schnabel</a></h1>
       </div>
       <div class="nav">
           <span class="nav-link"><a href="https://github.com/solean">Projects</a></span>
@@ -17,15 +17,26 @@
       </div>
       <hr>
       <div class="content">
-          <p>
-              Hi, I'm a Computer Science student at the University at Buffalo and an aspiring Software Developer.
-          </p>
+          {{> aboutme}}
       </div>
-
-      {{> hello}}
   </div>
 
 </body>
+
+<template name="aboutme">
+	<p>
+		Hi, I'm a Computer Science student at the University at Buffalo and an aspiring Software Developer.
+	</p>
+</template>
+
+<template name="post">
+	<li>
+		<h3>{{title}}</h3>
+		<p>{{text}}</p>
+		<br>
+		<p>{{pubDate}}</p>
+	</li>
+</template>
 
 <template name="hello">
   <button>Click Me</button>
