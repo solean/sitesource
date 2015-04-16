@@ -1,56 +1,76 @@
+html {
+	border-top: 6px solid rgba(208,1,27,0.75);
+}
+
 body {
-	background-color: #f5f5f5;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	color: #4A4A4A;
 }
 
 hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid rgba(208,1,27,0.5);
 	margin: 1em 0;
 	padding: 0;
 }
 
-.nav {
-	text-align: center;
-	font-size: 18px;
-	padding-bottom: .5em;
-}
-
-.nav a {
-	text-decoration: none;
-	color: #80743A;
-}
-
-.nav-link {
-	padding-left: .3em;
-	padding-right: .3em;
-}
-
 .content {
 	font-size: 24px;
-	font-weight: 200;
 	margin-left: auto;
 	margin-right: auto;
 	width: 16em;
 }
 
+.button {
+	border: 0 none;
+	border-radius: 25px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 10px;
+  text-transform: none;
+  transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  -webkit-transition: all 0.1s ease 0s;
+  width: 16.795%; /* auto */
+  text-align: center; /* DELETE WHEN WIDTH AUTO */
+  background: none repeat scroll 0 0 #4A4A4A;
+}
+
+.button:hover {
+	background: none repeat scroll 0 0 #959595;
+  color: #FFFFFF;
+}
+
+#nav {
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: .5em;
+}
+
 #page-wrap {
 	width: 800px;
+	min-height: 100%;
 	margin: 0 auto;
+	position: relative;
 }
 
 #header-name {
+	font-family: 'Oswald', sans-serif;
 	font-size: 32px;
-	font-family: "Lobster", cursive;
 	text-align: center;
+	line-height: 73px;
 }
 
 #header-name a {
-	color: #CB330F;
 	text-decoration: none;
+	color: #4A4A4A;
 }
-
-

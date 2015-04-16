@@ -1,40 +1,40 @@
 <head>
   <meta charset="utf-8">
   <title>Chris Schnabel</title>
-  <link rel="stylesheet" href="main.css">
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="sitesource.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <div id="page-wrap">
-      <div id="header-name">
-          <h1><a href="/">Chris Schnabel</a></h1>
-      </div>
-      <div class="nav">
-          <span class="nav-link"><a href="https://github.com/solean">Projects</a></span>
-          <!-- <span class="nav-link"><a href="resume.html">Resume</a></span>
-          <span class="nav-link"><a href="blog.html">Blog</a></span> -->
-          <span><button class="resume">Resume</button></span>
-          <span><button class="blog">Blog</button></span>
-      </div>
-      <hr>
-      <div class="content">
-      	{{#if aboutme}}
-          {{> aboutTemplate}}
-        {{/if}}
-        {{#if resume}}
-        	{{> resumeTemplate}}
-        {{/if}}
-        {{#if blog}}
-        <ol>
-        	{{#each posts}}
-        		{{> postTemplate}}
-        	{{/each}}
-        </ol>
-        {{/if}}
-      </div>
-  </div>
+	<div id="page-wrap">
+		<div id="header-name">
+			<h1 id="name">Chris Schnabel</h1>
+		</div>
+		<div id="nav">
+			<button class="button" id="projects">Projects</button>
+			<button class="button" id="resume">Resume</button>
+			<button class="button" id="blog">Blog</button>
+		</div>
+		<hr id="line">
+		<div class="content">
+			{{#if aboutme}}
+				{{> aboutTemplate}}
+			{{/if}}
 
+			{{#if resume}}
+				{{> resumeTemplate}}
+			{{/if}}
+
+			{{#if blog}}
+			<ol>
+				{{#each posts}}
+					{{> postTemplate}}
+				{{/each}}
+			</ol>
+			{{/if}}
+		</div>
+	</div>
 </body>
 
 <template name="aboutTemplate">
@@ -54,9 +54,4 @@
 
 <template name="resumeTemplate">
 	<p>Resume stuff blah blah</p>
-</template>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
 </template>
