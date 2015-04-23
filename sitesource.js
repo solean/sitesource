@@ -28,6 +28,8 @@ if (Meteor.isClient) {
       Session.set('aboutme', true);
       Session.set('resume', false);
       Session.set('blog', false);
+
+      $(".content").width("16em");
     },
 
     'click #projects': function () {
@@ -38,12 +40,16 @@ if (Meteor.isClient) {
       Session.set('resume', true);
       Session.set('aboutme', false);
       Session.set('blog', false);
+
+      $(".content").css("width", "32em");
     },
 
     'click #blog': function () {
       Session.set('blog', true);
       Session.set('resume', false);
       Session.set('aboutme', false);
+
+      $(".content").css("width", "32em");
     }
   });
 }

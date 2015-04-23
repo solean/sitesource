@@ -50,6 +50,15 @@ hr {
   color: #FFFFFF;
 }
 
+.resume-header {
+	color: rgba(208,1,27,1);
+	font-size: 32px;
+}
+
+.items {
+	font-size: 20px;
+}
+
 #nav {
 	text-align: center;
 	font-size: 18px;
@@ -73,4 +82,8 @@ hr {
 #header-name a {
 	text-decoration: none;
 	color: #4A4A4A;
+}
+
+#resume-button a {
+	text-decoration: none;
 }
