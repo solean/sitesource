@@ -59,6 +59,10 @@ hr {
 	font-size: 20px;
 }
 
+.footer {
+	padding-bottom: 40px;
+}
+
 #nav {
 	text-align: center;
 	font-size: 18px;
@@ -86,4 +90,32 @@ hr {
 
 #resume-button a {
 	text-decoration: none;
+}
+
+#centered-email {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pdf-button {
+	color: rgba(208,1,27,0.75);
+	border: solid 1px rgba(208,1,27,0.75);
+	background-color: #fff;
+}
+
+#pdf-button:hover {
+	border-color: #4A4A4A;
+	color: #4A4A4A;
+}
+
+#email-button {
+	width: 100px;
+	color: rgba(208,1,27,0.75);
+	border: solid 1px rgba(208,1,27,0.75);
+	background-color: #fff;
+}
+
+#email-button:hover {
+	border-color: #4A4A4A;
+	color: #4A4A4A;
 }

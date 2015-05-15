@@ -50,6 +50,14 @@ if (Meteor.isClient) {
       Session.set('aboutme', false);
 
       $(".content").css("width", "32em");
+    },
+
+    'click #email-button': function() {
+      window.location = 'mailto:chrisjschnabel@gmail.com';
+    },
+
+    'click #pdf-button': function () {
+      window.location = 'https://www.dropbox.com/s/ymrbnrdwcgu2c27/resume.pdf?dl=0';
     }
   });
 }
