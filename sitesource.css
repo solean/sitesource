@@ -108,6 +108,10 @@ hr {
 	color: #4A4A4A;
 }
 
+#email-button-container {
+	text-align: center;
+}
+
 #email-button {
 	width: 100px;
 	color: rgba(208,1,27,0.75);
